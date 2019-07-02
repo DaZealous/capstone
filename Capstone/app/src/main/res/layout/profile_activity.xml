@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#ffffff">
+
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="none"
+		android:fillViewport="true">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="280dp"
+				android:background="#ff00ff"
+				android:padding="10dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="25sp"
+					android:textColor="#ffffff"
+					android:textStyle="bold"
+					android:text="Don Java"
+					android:id="@+id/user_display_text"/>
+
+				<RelativeLayout
+					android:layout_marginTop="5dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/main"
+					android:orientation="vertical">
+
+					<de.hdodenhof.circleimageview.CircleImageView
+						xmlns:app="http://schemas.android.com/apk/res-auto"
+						android:id="@+id/img_profile"
+						android:layout_width="150dp"
+						android:layout_height="150dp"
+						android:layout_centerHorizontal="true"
+						android:src="@drawable/ic_launcher"
+						app:civ_border_color="#ffffff"
+						app:civ_border_width="1dp"/>
+				</RelativeLayout>
+
+				<TextView
+					android:layout_gravity="center"
+					android:id="@+id/user_name_text"
+					android:layout_marginTop="5dp"
+					android:gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:textColor="#ffffff"
+					android:textStyle="italic"
+					android:text="For every action, there is always an equal or opposite reaction...he who laugh last laugh best..."/>
+
+			</LinearLayout>
+
+			<RelativeLayout
+				android:gravity="center_vertical"
+				android:paddingTop="5dp"
+				android:paddingLeft="25dp"
+				android:paddingRight="25dp"
+				android:paddingBottom="5dp"
+				android:layout_marginTop="-35dp"
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_width="fill_parent"
+				android:layout_height="60dp"
+				android:background="@drawable/lay_circle"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:gravity="center">
+
+					<TextView
+						android:gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15sp"
+						android:textColor="#000000"
+						android:text="Friends"/>
+
+					<TextView
+						android:id="@+id/profile_user_count"
+						android:gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15sp"
+						android:textColor="#ff00ff"
+						android:text="275K"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_centerHorizontal="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:gravity="center">
+
+					<TextView
+						android:gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15sp"
+						android:textColor="#000000"
+						android:text="Followers"/>
+
+					<TextView
+						android:gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15sp"
+						android:textColor="#ff00ff"
+						android:text="0"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_alignParentRight="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:gravity="center">
+
+					<TextView
+						android:gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15sp"
+						android:textColor="#000000"
+						android:text="Following"/>
+
+					<TextView
+						android:gravity="center"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="15sp"
+						android:textColor="#ff00ff"
+						android:text="0"/>
+
+				</LinearLayout>
+
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<Button
+					android:textColor="#ff00ff"
+					android:id="@+id/btn_post"
+					android:background="#ffffff"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="Profile"/>
+
+				<Button
+					android:textColor="#000000"
+					android:id="@+id/btn_page"
+					android:background="#FFFFFF"
+					android:layout_marginLeft="5dp"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:text="Edit Profile"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<View
+					android:layout_weight="1"
+					android:id="@+id/post_v"
+					android:background="#ff00ff"
+					android:layout_width="wrap_content"
+					android:layout_height="2dp"/>
+
+				<View
+					android:layout_weight="1"
+					android:visibility="invisible"
+					android:id="@+id/page_v"
+					android:layout_marginLeft="5dp"
+					android:background="#ff00ff"
+					android:layout_width="wrap_content"
+					android:layout_height="2dp"/>
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_marginLeft="2dp"
+				android:layout_marginRight="2dp"
+				android:layout_marginBottom="2dp"
+				android:background="@drawable/another"
+				android:layout_width="fill_parent"
+				android:layout_height="115dp"
+				android:orientation="horizontal">
+				<ScrollView
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:scrollbars="none"
+					android:fillViewport="true">
+
+					<LinearLayout
+						android:padding="10dp"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+						
+				<TextView
+					android:layout_gravity="left"
+					android:id="@+id/profile_user_email"
+					android:layout_marginTop="5dp"
+					android:gravity="center"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="15sp"
+					android:textStyle="italic"
+					android:text="hello"/>
+						<TextView
+							android:layout_gravity="center"
+							android:layout_marginTop="15dp"
+							android:gravity="center"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="15sp"
+							android:textStyle="italic"
+							android:text="Coming Soon!!!"/>
+					</LinearLayout>
+				</ScrollView>
+			</LinearLayout>
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

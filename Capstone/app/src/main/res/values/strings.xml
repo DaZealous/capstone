@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Capstone</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="just_text">e ‘Applies If…’ section allow you to pick when you want that
+		condition to apply based on the following: App Version: You can have multiple versions 
+		of the app or multiple apps in the Firebase project, and can set a condition for that. OS 
+		Type: Android or iOS. User in random percentile: Each user will have a persistent percentile 
+		that is randomly assigned on a per-project basis. You can use this to set a condition for users that 
+		are in a given percentile. Device Language: Including locale.
+		Country or Region: As inferred from the device. You can set multiple ones. 
+		User Audience: Analytics audience for the user. 
+		See Chapter  14. User Property: Analytics user property. See Chapter 
+		14. By combining these you have a very powerful and flexible way to 
+		determine a condition, and you can then set the Remote Config variable for that.
+		So, for example, Figure  11-8  shows where I set a condition called ‘EnglishSpeaking’ for four countries
+		(USA, UK, Canada, Ireland).</string>
+</resources>

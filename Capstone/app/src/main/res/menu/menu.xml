@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<item
+		android:id="@+id/users"
+		android:title="All Users"/>
+	
+    <item
+        android:id="@+id/log_out"
+        android:title="Logout"/>
+    <item
+		android:id="@+id/friends"
+		android:title="Friends"/>
+	<item
+		android:id="@+id/requests"
+		android:title="Friend Requests"/>
+	<item
+		android:id="@+id/exit"
+		android:title="Exit"/>
+</menu>

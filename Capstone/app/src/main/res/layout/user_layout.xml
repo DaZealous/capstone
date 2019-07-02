@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:padding="10dp"
+    android:orientation="vertical"
+	android:background="#ff00ff">
+    <TextView 
+		android:layout_centerHorizontal="true"
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="User Display"
+		android:textSize="20sp"
+		android:id="@+id/user_layout_display"/>
+	<TextView 
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/user_layout_display"
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="User Name"
+		android:textSize="15sp"
+		android:id="@+id/user_layout_name"/>
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/img_request"
+		android:layout_below="@+id/user_layout_name"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_centerHorizontal="true"
+		android:src="@drawable/businessman"
+		app:civ_border_color="#ffffff"
+		app:civ_border_width="1dp"/>
+	<TextView 
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/img_request"
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Not Friends"
+		android:textSize="15sp"
+		android:id="@+id/request_status"/>
+	<Button
+		android:layout_below="@+id/request_status"
+		android:layout_alignParentLeft="true"
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Add Friend"
+		android:id="@+id/add_friend"/>
+	<Button
+		android:layout_below="@+id/request_status"
+		android:layout_alignParentRight="true"
+		android:textColor="#ffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Cancel Request"
+		android:id="@+id/cancle_friend"/>
+
+</RelativeLayout>

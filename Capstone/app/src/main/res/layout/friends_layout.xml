@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/img_friends"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_alignParentLeft="true"
+		android:src="@drawable/businessman"
+		app:civ_border_color="#ff00ff"
+		app:civ_border_width="1dp"/>
+
+	<TextView
+		android:layout_marginLeft="10dp"
+		android:text="Display Name"
+		android:layout_toRightOf="@+id/img_friends"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		android:textColor="#ff00ff"
+		android:id="@+id/friends_display"/>
+
+	<TextView
+		android:layout_marginLeft="10dp"
+		android:text="Text Message"
+		android:layout_toRightOf="@+id/img_friends"
+		android:layout_below="@+id/friends_display"
+		android:layout_width="wrap_content"
+		android:layout_height="20dp"
+		android:textSize="15sp"
+		android:textColor="#919191"
+		android:id="@+id/friends_username"/>
+
+</RelativeLayout>
+

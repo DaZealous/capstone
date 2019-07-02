@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:id="@+id/toast_vie"
+    android:orientation="horizontal"
+	android:gravity="center">
+	<Button
+		android:textColor="#ff00ff"
+		android:background="@drawable/frame_layout"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:text="Login"
+		android:id="@+id/prof_btn"/>
+	<Button
+		android:layout_marginLeft="10dp"
+		android:background="@drawable/btn_back"
+		android:textColor="#ffffff"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:text="Register"
+		android:id="@+id/reg_btn"/>
+	
+</LinearLayout>

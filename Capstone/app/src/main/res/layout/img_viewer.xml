@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:gravity="center"
+    android:orientation="vertical"
+	android:padding="10dp">
+    <ImageView
+	android:layout_width="wrap_content"
+	android:layout_height="300dp"
+	android:id="@+id/img_view"
+	android:src="@drawable/ic_launcher"/>
+	<Button
+	android:layout_marginTop="10dp"
+	android:padding="10dp"
+	android:textColor="#ffffff"
+	android:id="@+id/img_change"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Change Picture"
+	android:textSize="15sp"
+	android:textStyle="bold"
+	android:background="@drawable/btn_back"/>
+	
+</LinearLayout>

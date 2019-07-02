@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="www.church.capstone" >
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="www.church.capstone.register_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name=".ProfileActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="www.church.capstone.profile_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="www.church.capstone.login_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name=".AllUsers"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="www.church.capstone.all_users" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name=".RequestActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="www.church.capstone.request_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name=".FriendsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="www.church.capstone.friends_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name=".ChatActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="www.church.capstone.chat_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

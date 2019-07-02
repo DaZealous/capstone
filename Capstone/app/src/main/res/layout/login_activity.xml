@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<TextView
+		android:text="primate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#FF00FF"
+		android:textSize="50sp"
+		android:textStyle="bold|italic"
+		android:typeface="normal"
+		android:shadowColor="#000000"
+		android:shadowDx="10"
+		android:shadowDy="10"
+		android:shadowRadius="10"/>
+
+	<EditText
+		android:padding="10dp"
+		android:background="@drawable/frame_layout"
+		android:layout_marginTop="50dp"
+		android:hint="Enter User Name"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:inputType="textPersonName"
+		android:id="@+id/text_login_user"/>
+
+	<EditText
+		android:padding="10dp"
+		android:background="@drawable/frame_layout"
+		android:layout_marginTop="10dp"
+		android:hint="Enter Password"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:inputType="textPassword"
+		android:id="@+id/text_login_password"/>
+
+	<Button
+		android:textColor="#ffffff"
+		android:background="@drawable/btn_back"
+		android:layout_marginTop="10dp"
+		android:text="Login"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/btn_login"/>
+
+</LinearLayout>
+
